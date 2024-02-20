@@ -1,0 +1,71 @@
+.group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 450px;
+    position: relative;
+    height: 60px;
+    margin: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: 2px solid #aaa;
+    transition: outline 200ms ease-out;
+    padding-left: 10px;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 20px;
+  }
+  
+  .label {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    transition: all 150ms ease-out;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #aaa;
+    font-size: 18px;
+  }
+  
+  .input:hover + .label,
+  .input:not(:placeholder-shown) + .label {
+    transform: translateY(-32px);
+    background-color: #000;
+  }
+  
+  .input:hover,
+  .input:not(:placeholder-shown) {
+    outline-color: #7648ffc7;
+    transition: outline 200ms ease-in;
+  }
+  
+  .group span {
+    color: #7648ffc7;
+    align-self: center;
+    bottom: -15px;
+    left: 10px;
+    position: absolute;
+    font-size: 1rem;
+  }
+
+@media only screen and (max-width: 1024px) {
+  .group span {
+      font-size: 1.5rem;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+  .input {
+    width: 90%;
+
+  }
+
+  .group span {
+    font-size: 3rem;
+  }
+}

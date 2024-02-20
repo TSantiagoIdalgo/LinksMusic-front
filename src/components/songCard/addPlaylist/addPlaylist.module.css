@@ -1,0 +1,44 @@
+.playlist {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+.container_title {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.container_title h1{
+    text-align: center;
+}
+
+.close_portal{
+    color: #fff;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container_title h1 {
+        font-size: 4rem;
+    }
+    .close_portal {
+        font-size: 7rem;
+    }
+    
+}

@@ -1,0 +1,17 @@
+.playlistView {
+    width: 100%;
+    height: calc(100% + 15vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.playlistCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

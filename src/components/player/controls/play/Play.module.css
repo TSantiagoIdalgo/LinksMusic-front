@@ -1,0 +1,79 @@
+.time input[type="range"] {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+.time input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+  }
+  
+.time input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent; /* Color del pulgar */
+    cursor: pointer;
+    margin-top: -6px; /* Ajuste para centrar verticalmente */
+    transition: background 100ms ease-in;
+  }
+  
+.time input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+  }
+  
+.time input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #7648ffff;
+    cursor: pointer;
+  }
+  
+.time input[type="range"]::-ms-track {
+    width: 100%;
+    height: 5px;
+    background: #7648ffff;
+  }
+  
+.time input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #7648ffff;
+    cursor: pointer;
+  }
+
+
+.principal_time {
+  background-color: #7648ff;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  pointer-events: none;
+}
+
+.time:hover input[type="range"]::-webkit-slider-thumb {
+  background-color: #7648ffff;
+}
+
+.hoverTime {
+  color: #fff;
+  z-index: 2000;
+  position: absolute;
+  top: -55px;
+  padding: 12px;
+  background-color: #323232;
+  border-radius: 6px;
+  clip-path: polygon(100% 0, 100% 81%, 15% 82%, 0 100%, 0 0);
+}

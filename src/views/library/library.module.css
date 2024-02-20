@@ -1,0 +1,27 @@
+.library {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.library_button {
+    display: flex;
+    gap: 20px;
+}
+.library_button button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #323232;
+    color: #ccc;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.library_button button:hover {
+    color: #fff;
+    border-color: #fff;
+}

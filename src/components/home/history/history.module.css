@@ -1,0 +1,80 @@
+.history {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.historyCards {
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    height: 320px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    &::-webkit-scrollbar {
+      width: 0; 
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+}
+
+.historyCards:hover {
+    scrollbar-width: thin;
+      scrollbar-color: #7648ff #333;
+      &::-webkit-scrollbar {
+        width: 6px; 
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #7648ff;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: #333;
+      }
+  }
+
+.user {
+    color: #fff;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+}
+
+.undefImg {
+    width: 90px;
+    height: 90px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(109%) contrast(109%);
+}
+
+.userImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.userText {
+    display: flex;
+    flex-direction: column;
+}
+
+.userText span {
+    font-size: 1.5rem;
+}
+
+.userText h2 {
+    font-size: 2.5rem;
+}

@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'Sansation Light';
+  src: url('../public/Sansation_Light.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: 'Sansation Light';
+}
+
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7648ffc7;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333 ;
+}

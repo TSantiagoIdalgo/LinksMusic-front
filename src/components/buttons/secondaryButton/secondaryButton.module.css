@@ -1,0 +1,21 @@
+.button {
+    width: 225px;
+    height: 70px;
+    background-color: #323232aa;
+    border: 2px solid #eee;
+    border-radius: 16px;
+    color: #fff;
+    font-family: 'Sansation Light';
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    border-color: #7648ffc7;
+}
+
+@media only screen and (max-width: 800px) {
+    .button {
+        font-size: 4rem;
+    }
+}

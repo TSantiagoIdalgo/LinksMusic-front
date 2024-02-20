@@ -1,0 +1,94 @@
+
+.login_remind_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_remind_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login_remind_button button{
+    width: 50px;
+    height: 25px;
+    background-color: #323232;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.login_remind_button button i {
+    width: 20px;
+    height: 20px;
+    background-color: #191919;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    animation-name: disable;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+.login_remind_active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.login_remind_active span {
+    font-size: 1rem;
+} 
+.login_remind_button span {
+    font-size: 1rem;
+}
+
+.login_remind_active button{
+    width: 50px;
+    height: 25px;
+    background-color: #7648ffc7;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.login_remind_active i {
+    width: 20px;
+    height: 20px;
+    background-color: #191919;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    animation-name: active;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+
+.login_forgot {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.login_forgot:hover {
+    color: #7648ffc7;
+}
+
+@keyframes active {
+    0% {
+        left: 5px;
+    }
+
+    100% {
+        left: 25px;
+    }
+}

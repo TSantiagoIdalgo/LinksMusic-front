@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 4rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: none;
+}
+
+.button:active {
+    color: #ccc;
+    background-color: #323232;
+    border-radius: 20%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .button {
+        display: inline-block;
+    }
+}

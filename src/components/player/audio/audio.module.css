@@ -1,0 +1,49 @@
+.audio {
+    width: 33.33%;
+    position: relative;
+}
+
+.audio_change img{
+    filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(4%) hue-rotate(61deg) brightness(106%) contrast(100%);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 25px;
+    bottom: -15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.audio_change input[type="range"] {
+    position: absolute;
+    top: -8px;
+    right: 60px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
+.audio_change input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 30%;
+    background: #7648ffff; /* Color del pulgar */
+    cursor: pointer;
+    z-index: 50;
+  }
+
+
+.audio_range {
+  height: 10px;
+  background: #7648ff;
+  position: absolute;
+  top: -8px;
+  right: 60px;
+  pointer-events: none;
+}

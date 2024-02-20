@@ -1,0 +1,88 @@
+
+
+.playlistHeader_tittle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.playlistHeader_tittle h2 {
+    font-size: 3rem;
+}
+
+.playlistHeader_tittle p {
+    font-size: 1.4rem;
+    height: 150px;
+    overflow-y: scroll;
+    color: #eeee;
+}
+
+.playlist_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist_text span {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.userId{
+    color: #7648ff;
+    font-size: 1.2rem;
+    align-self: flex-end;
+}
+
+.playlistData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes {
+    display: flex;
+    gap: 30px;
+}
+
+.likes img {
+    width: 40px;
+    height: 40px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(23%) hue-rotate(17deg) brightness(100%) contrast(88%);
+}
+
+.like span {
+    font-size: 1rem;
+}
+
+.like:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(103%) contrast(101%);
+    cursor: pointer;
+}
+
+.edit {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(103%) contrast(101%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    cursor: pointer;
+}
+
+.edit:hover {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(1%) saturate(715%) hue-rotate(88deg) brightness(84%) contrast(97%);
+}
+
+@media only screen and (max-width: 1024px) {
+    .playlistHeader_tittle {
+        text-align: center;
+    }
+}

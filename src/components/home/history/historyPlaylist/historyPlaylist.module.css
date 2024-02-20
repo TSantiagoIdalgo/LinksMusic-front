@@ -1,0 +1,14 @@
+.playlist {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 290px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.playlist:hover {
+    background-color: #212121;
+}

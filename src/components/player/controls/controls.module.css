@@ -1,0 +1,87 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    width: 33.33%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button_play {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaa;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.button_play img {
+    width: 3vw;
+}
+
+.button_prev {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(1%) saturate(53%) hue-rotate(139deg) brightness(94%) contrast(85%);
+    width: 3vw;
+    cursor: pointer;
+}
+
+.button_next {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(1%) saturate(53%) hue-rotate(139deg) brightness(94%) contrast(85%);
+    width: 3vw;
+    cursor: pointer;
+}
+
+.button_random {
+    width: 1.5vw;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(74%) sepia(1%) saturate(53%) hue-rotate(139deg) brightness(94%) contrast(85%);
+    cursor: pointer;
+}
+
+.button_repeat {
+    cursor: pointer;
+    width: 2vw;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(1%) saturate(53%) hue-rotate(139deg) brightness(94%) contrast(85%);
+}
+
+.button_next:hover, .button_prev:hover, .button_repeat:hover, .button_random:hover {
+    filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(4%) hue-rotate(61deg) brightness(106%) contrast(100%);
+}
+
+.button_play:hover {
+    background-color: #fff;
+}
+
+.buttons_time {
+    font-size: 1rem;
+    color: #fff;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .buttons img {
+        width: 6vw;
+    }
+    .buttons_time {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .buttons img {
+        width: 10vw
+    }
+    .buttons_time {
+        font-size: 1.5rem;
+    }
+}

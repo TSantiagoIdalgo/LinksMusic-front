@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 270px;
+    height: 290px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: #212121;
+    border-radius: 10px;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+}
+
+.image {
+    border-radius: 12px;
+    margin-top: 10px;
+    width: 220px;
+    height: 160px;
+}
+
+.notImage {
+    border-radius: 12px;
+    margin-top: 10px;
+    width: 200px;
+    height: 160px;
+    filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(4%) hue-rotate(61deg) brightness(106%) contrast(100%);
+}

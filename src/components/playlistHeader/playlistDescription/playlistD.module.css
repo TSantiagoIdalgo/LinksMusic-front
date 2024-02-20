@@ -1,0 +1,49 @@
+
+
+.playlist_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.playlist_text span {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.userId{
+    color: #7648ff;
+    font-size: 1.2rem;
+    align-self: flex-end;
+}
+
+.playlistData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes {
+    display: flex;
+    gap: 30px;
+}
+
+.likes img {
+    width: 30px;
+    height: 30px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(23%) hue-rotate(17deg) brightness(100%) contrast(88%);
+}
+
+.like span {
+    font-size: 1.4rem;
+}
+
+.like:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(103%) contrast(101%);
+    cursor: pointer;
+}
