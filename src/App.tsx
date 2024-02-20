@@ -7,6 +7,7 @@ import PageError from './views/pageError/pageError';
 
 function App() {
   const token = window.localStorage.getItem('USER_INFO')||window.sessionStorage.getItem('USER_INFO');
+  
   return (
     <div>
       <Routes>
