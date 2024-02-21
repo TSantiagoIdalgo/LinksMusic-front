@@ -23,7 +23,7 @@
     grid-area: sidebar; 
     background-color: #000;
     min-height: calc(100vh - 80px);
-    height: 100vh;
+    height: 100%;
     border-right: 2px solid #fff;
 }
   

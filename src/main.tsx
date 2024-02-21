@@ -24,7 +24,7 @@ export const auth = getAuth(firebaseApp);
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <ApolloProvider client={client}>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/linksmusic'>
         <App />
       </BrowserRouter>
     </Provider>
