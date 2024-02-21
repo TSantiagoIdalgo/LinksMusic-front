@@ -1,4 +1,4 @@
-import Style from './play.module.css';
+import Style from './Play.module.css';
 import React from 'react';
 import { useRef, useEffect, useState } from 'react';
 
