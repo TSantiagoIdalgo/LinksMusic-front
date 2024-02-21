@@ -13,7 +13,7 @@ export const useLogin = () => {
   const { register, handleSubmit, formState: { errors }, setError } = useForm<signInSchema>({
     resolver: zodResolver(loginSchema)
   });
-  console.log(errors);
+  
   const onSubmit = async (data: signInSchema) => {
     const { email, password } = data;
     try {
