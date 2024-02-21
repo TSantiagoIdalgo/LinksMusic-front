@@ -14,7 +14,8 @@ export const useGetMusic = () => {
   const [hasMore, setHasMore] = useState(true);
   const container = useRef<HTMLDivElement>(null);
   const { fetchMore } = useQuery<IMusicPaginate, IMusicPaginateProps>(GET_ALL_MUSIC, { 
-    variables: { page: page, size: 20 }
+    variables: { page: page, size: 20 },
+    pollInterval: 1800000
   });
 
   const handleScroll = async () => {
