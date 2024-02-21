@@ -28,7 +28,8 @@ export default function MusicCardPortal({ id, name, handlePortal, userId }: IPro
             <h1>{name}</h1>
             <button onClick={() => handlePortal(false)} className={Style.close_portal}>X</button>
           </div>
-          <PortalButton tittle={'Add playlist'} onClick={() => handlePlaylist(!playlist)} img={addIcon}/>
+          {userId === data?.getUserById.email
+          && <PortalButton tittle={'Add playlist'} onClick={() => handlePlaylist(!playlist)} img={addIcon}/>}
           <PortalButton tittle='Download' onClick={() => getDownloadUrl(id, name)} img={downloadIcon}/>
           {userId === data?.getUserById.email 
           && <PortalButton tittle='Delete' onClick={() => handleDelete(id)} img={trashIcon}/>}
