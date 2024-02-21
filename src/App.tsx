@@ -3,6 +3,7 @@ import Main from './views/main/main';
 import Login from './views/login/login';
 import Register from './views/register/register';
 import Verify from './views/verify/verify';
+import PageError from './views/pageError/pageError';
 
 function App() {
   const token = window.localStorage.getItem('USER_INFO')||window.sessionStorage.getItem('USER_INFO');
@@ -10,11 +11,13 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='*' element={<Navigate to='/home'/>}/>
-        <Route path="/:id" element={<Main/>}/>
-        {!token && <Route path="/verify" element={<Verify/>}/>}
-        {!token && <Route path="/login" element={<Login/>}/>}
-        {!token && <Route path="/register" element={<Register/>}/>}
+        <Route path='*' element={<PageError/>}/>
+        <Route path='/' element={<Navigate to="/linksmusic/home" />}/>
+        <Route path="/linksmusic" element={<Navigate to="/linksmusic/home"/>}/>
+        <Route path="/linksmusic/:id" element={<Main/>}/>
+        {!token && <Route path="/linksmusic/verify" element={<Verify/>}/>}
+        {!token && <Route path="/linksmusic/login" element={<Login/>}/>}
+        {!token && <Route path="/linksmusic/register" element={<Register/>}/>}
       </Routes>
     </div>
   );
