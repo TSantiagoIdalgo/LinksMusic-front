@@ -3,6 +3,7 @@
 .playlist_info_img {
     min-width: 300px;
     height: 300px;
+    max-width: 400px;
     background-color: #323232;
     border-radius: 16px;
     margin: 15px;
