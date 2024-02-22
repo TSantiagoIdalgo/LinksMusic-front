@@ -23,7 +23,7 @@ const AddPlaylist = ({ id, name, handlePortal, handlePlaylist }: Props) => {
       </div>
       <div>
         {!playlist.data 
-          ? <h2>Not playlist found</h2>
+          ? <h2 className={Style.error}>Not playlist found</h2>
           : <>
             {playlist.data.getUserPlaylist.map(item => (
               <AddButton key={item.id} playlist={item} id={id}/>
