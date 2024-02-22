@@ -12,7 +12,8 @@
 }
 .playlist_info_i {
     width: 300px;
-    height: 250px;
+    height: 300px;
+    max-height: 400px;
     margin: 15px;
     background-color: #323232;
     border-radius: 16px;
@@ -20,7 +21,8 @@
 
 .undef_container {
     width: 300px;
-    height: 250px;
+    height: 300px;
+    max-height: 400px;
     background-color: #323232;
     border-radius: 4px;
 }
