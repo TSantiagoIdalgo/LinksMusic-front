@@ -13,7 +13,7 @@ interface Props {
 
 const AddPlaylist = ({ id, name, handlePortal, handlePlaylist }: Props) => {
   const playlist = useQuery<UserPlaylist>(GET_USER_PLAYLIST);
-  if (playlist.loading || !playlist.data || playlist.error) return null;
+
   return (
     <div className={Style.playlist}>
       <div className={Style.container_title}>
@@ -22,9 +22,12 @@ const AddPlaylist = ({ id, name, handlePortal, handlePlaylist }: Props) => {
         <button className={Style.close_portal} onClick={() => handlePortal(false)}>X</button>
       </div>
       <div>
-        {playlist.data.getUserPlaylist.map(item => (
-          <AddButton key={item.id} playlist={item} id={id}/>
-        ))}
+        {!playlist.data 
+          ? <h2>Not playlist found</h2>
+          : <>
+            {playlist.data.getUserPlaylist.map(item => (
+              <AddButton key={item.id} playlist={item} id={id}/>
+            ))}</>}
       </div>
     </div>
   );
