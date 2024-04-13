@@ -43,3 +43,12 @@
     height: 35px;
     margin-left: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .login_button {
+        width: 90%
+    }
+    .login_middle {
+        width: 90%
+    }
+}
