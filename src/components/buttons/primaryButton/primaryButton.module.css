@@ -14,11 +14,6 @@
     border-color: #7648ffc7;
 }
 
-@media only screen and (max-width: 1024px) {
-    .button {
-        font-size: 2rem;
-    }
-}
 @media only screen and (max-width: 600px) {
     .button {
         width: 100%;
