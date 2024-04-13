@@ -77,3 +77,9 @@
   gap: 10px;
   color: #ccc;
 }
+
+@media only screen and (max-width: 600px) {
+    .playlist_container {
+        padding: 0
+    }
+}
