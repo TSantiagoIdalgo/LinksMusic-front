@@ -78,3 +78,10 @@
 .userText h2 {
     font-size: 2.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .history_container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
